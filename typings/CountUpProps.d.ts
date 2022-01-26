@@ -15,6 +15,10 @@ export interface CountUpContainerProps {
     startValue?: DynamicValue<Big>;
     endValue: DynamicValue<Big>;
     durationValue: number;
+    delayValue: number;
+    separator: string;
+    prefix: string;
+    suffix: string;
 }
 
 export interface CountUpPreviewProps {
@@ -23,4 +27,8 @@ export interface CountUpPreviewProps {
     startValue: string;
     endValue: string;
     durationValue: number | null;
+    delayValue: number | null;
+    separator: string;
+    prefix: string;
+    suffix: string;
 }

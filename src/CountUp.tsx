@@ -11,7 +11,12 @@ export default class CountUp extends Component<CountUpContainerProps> {
         const endValueNumber = Number(this.props.endValue.value);
         return <CountUpElement 
             startValue={startValueNumber ? startValueNumber : 0}
-            endValue={endValueNumber ? endValueNumber : 0}
-            durationValue={this.props.durationValue ? this.props.durationValue : 0} />;
+            endValue={endValueNumber ? endValueNumber : 0} 
+            durationValue={this.props.durationValue ? this.props.durationValue : 0}
+            separator={this.props.separator ? this.props.separator : ""}
+            delay={this.props.delayValue ? this.props.delayValue : 0}
+            prefix={this.props.prefix ? this.props.prefix : ""}
+            suffix={this.props.suffix ? this.props.suffix : ""}
+            style={this.props.style} className={this.props.class} />;
     }
 }

@@ -12,16 +12,33 @@
         <propertyGroup caption="General">
             <property key="startValue" type="expression" required="false" defaultValue="0">
                 <caption>Start value</caption>
-                <description></description>
+                <description>Initial value.</description>
                 <returnType type="Integer" />
             </property>
             <property key="endValue" type="expression" required="true" defaultValue="0">
                 <caption>End value</caption>
-                <description></description>
+                <description>Target value.</description>
                 <returnType type="Integer" />
             </property>
             <property key="durationValue" type="integer" required="true" defaultValue="5">
                 <caption>Duration</caption>
+                <description>Duration in seconds.</description>
+            </property>
+            <property key="delayValue" type="integer" required="true" defaultValue="0">
+                <caption>Delay</caption>
+                <description>Delay in seconds before starting the transition.</description>
+            </property>
+            
+            <property key="separator" type="string" required="false" defaultValue="">
+                <caption>Separator</caption>
+                <description>Specifies character of thousands separator.</description>
+            </property>
+            <property key="prefix" type="string" required="false" defaultValue="">
+                <caption>Prefix</caption>
+                <description>Static text before the transitioning value.</description>
+            </property>
+            <property key="suffix" type="string" required="false" defaultValue="">
+                <caption>Suffix</caption>
                 <description></description>
             </property>
         </propertyGroup>
