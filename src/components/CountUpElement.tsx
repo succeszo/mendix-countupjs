@@ -17,8 +17,8 @@ export class CountUpElement extends Component<InputProps> {
     render(): ReactNode {
         return <CountUp
             end={this.props.endValue} 
-            start={this.props.startValue ? this.props.endValue : 0} 
-            duration={this.props.durationValue}
+            start={this.props.startValue ? this.props.startValue : 0} 
+            duration={this.props.durationValue} 
             style={this.props.style} 
             className={this.props.className}
             separator={this.props.separator}
